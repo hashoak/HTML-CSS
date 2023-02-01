@@ -1,0 +1,60 @@
+h4{
+    color: red;
+}
+
+p,a{
+    color: green;
+}
+
+li{
+    list-style-type: lower-roman;
+}
+
+em.spl,li.spl{
+    color: orange;
+    font-weight: bold;
+}
+
+li em{
+    color: greenyellow;
+}
+
+li+li{
+    font-size: 150%;
+}
+
+a:hover{
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+body h1+p .spl{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+#heading{
+    color: aqua;
+    background-color: yellowgreen;
+}
+
+p#splid{
+    color: red;
+    background-color: blue;
+}
+
+li[id]{
+    background-color: aqua;
+}
+
+li[id="li la"]{
+    color: red;
+}
+li[id~="la"]{
+    list-style-type: square;
+}
+
+*{
+    background-color: chocolate;
+}

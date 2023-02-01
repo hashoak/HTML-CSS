@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Relative Units</title>
+        <style>
+            .percent{
+                font-size: 200%;
+            }
+            .em{
+                font-size: 2em;
+            }
+            .rem{
+                font-size: 2rem;
+            }
+            .vw{
+                font-size: 3vw;
+            }
+            .vh{
+                font-size: 6vh;
+            }
+            .vmin{
+                font-size: 5vmin;
+            }
+            .vmax{
+                font-size: 5vmax;
+            }
+        </style>
+    </head>
+    <body>
+        <div>Original Font size</div>
+        <div class="percent">200% Font size: 200% of element</div>
+        <div class="em">2em Font size: 2 x element</div>
+        <div class="rem">2rem Font size: 2 x root element</div>
+        <div class="vw">3vw Font size: 3% of width of the window</div>
+        <div class="vh">6vh Font size: 6% of height of the window</div>
+        <div class="vmin">5vmin Font size: 5% of min(width,height)</div>
+        <div class="vmax">5vmax Font size: 5% of max(width,height)</div>
+    </body>
+</html>
