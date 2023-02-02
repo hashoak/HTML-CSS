@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us | BINOD Electronics Support</title>
+        <link rel="stylesheet" href="2c-5-challange.1@contact_form.css">
+    </head>
+    <body>
+        <header>
+            <h1><b class="logo">BE</b><b class="name"> BINOD Electronics</b></h1>
+        </header>
+        <main>
+            <form action="">
+                <h2>CONTACT US</h2>
+                <hr>
+                <p class="rs"><b class="s">*</b> Required fields</p>
+                <div class="personal">
+                    <h3>About you</h3>
+                    <p>Name <b class="s">*</b><br>
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required></p>
+                    <br>
+                    <p>Email <b class="s">*</b><br>
+                        <input type="email" placeholder="Email ID" required>
+                        <input type="email" placeholder="Confirm Email ID" required></p>
+                    <br>
+                    <p>Phone <b class="s">*</b><br>
+                        <input type="tel" placeholder="Telephone number" required>
+                        <input type="tel" placeholder="Mobile number">
+                    </p>
+                </div>
+                <div class="query">
+                    <h3>About your Inquiry</h3>
+                    <p>Select your type of Inquiry. <b class="s">*</b>
+                        <select name="type_of_inquiry" id="" required>
+                            <option value="">Select a Type</option>
+                            <option value="customer_service">Customer Service</option>
+                            <option value="product_service">Product Service</option>
+                            <option value="business">Business Support</option>
+                            <option value="product_information">Product Information</option>
+                            <option value="career_jobs">Career and Jobs</option>
+                            <option value="other">Others</option>
+                        </select>
+                    </p>
+                    <p>Subject <b class="s">*</b><input type="text" required></p>
+                    <p>Type your Query <b class="s">*</b><textarea name="query" id="" cols="30" rows="10" placeholder="20-100 words" required></textarea></p>
+                    <p class="att">Attachment - Optional <input type="file" name="attachment" id=""></p>
+                </div>
+                <fieldset>
+                    <legend>Privacy Policy</legend>
+                    <p><input type="checkbox" name="privacy_policy" id="" required> I have read and accept the <a href="#">Privacy Policy</a>. <b class="s">*</b></p>
+                    <p><input type="checkbox" name="promotions" id=""> I like to receive news and offers from BINOD Electronics.</p>
+                </fieldset>
+                <input type="submit" value="Submit Query">
+            </form>
+        </main>
+        <footer>
+            <a href="#">For Business</a>
+            <a href="#">Products</a>
+            <a href="#">My Account</a>
+            <a href="#">About <b class="logo">BE</b></a>
+            <br>
+            <p class="cr">© 2015-2036 BINOD Electronics. All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

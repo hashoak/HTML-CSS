@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Specificity</title>
+        <link rel="stylesheet" href="2c-4-1@cascading_specificity_and_inheritance.css">
+        <style>
+            body{
+                color: blue;
+            }
+
+            .cas{
+                color: red;
+            }
+            .cas{
+                color: blue;
+            }
+
+            ul#summer-drinks li.favorite{
+                color: red;
+                font-weight: bold;
+            }
+            ul#summer-drinks li{
+                font-size: 32px;
+                color: black;
+                font-weight: normal;
+            }
+            .att{
+                color: brown;
+            }
+            .link{
+                color: rgb(255, 0, 255);
+            }
+
+            .a a{
+                color: inherit;
+            }
+            .b a{
+                color: initial;
+            }
+            .c a{
+                color: unset;
+            }
+
+            h1{
+                background-color: blue;
+            }
+            .imp{
+                background-color: blue;
+            }
+            #imp{
+                background-color: blue;
+            }
+            h1{
+                background-color: red !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="cas">Cascading</h3>
+        <hr>
+        <h2>Specificity</h2>
+        <ul id="summer-drinks">
+            <li>Mountain Dew</li>
+            <li class="favorite">Appy Fizz</li>
+            <li>Jeeru</li>
+        </ul>
+        <h3 class="att" style="color: greenyellow;">"Style" attribute has higher attribute</h3>
+        <h3 class="link">"link" and "style" preference is determined by their precedence order</h3>
+        <hr>
+        <h2>Inheritance</h2>
+        <ul>
+            <li>Default <a href="">Link</a> color</li>
+            <li class="a">Inherit <a href="">Link</a> color</li>
+            <li class="b">Initial <a href="">Link</a> color</li>
+            <li class="c">Unset <a href="">Link</a> color</li>
+        </ul>
+        <hr>
+        <h1 class="imp" id="imp" style="background-color: blue;">!important is Important</h2>
+        <p>specificity becomes (1,0,0,0)</p>
+    </body>
+</html>

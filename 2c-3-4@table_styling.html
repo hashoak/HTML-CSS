@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table styles</title>
+        <style>
+            table,tr,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 6px;
+                border-spacing: 5px;
+            }
+            th{
+                background-color: red;
+                color: blue;
+            }
+            td{
+                background-color: blue;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Subject</th>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>English</th>
+                    <td>82</td>
+                    <td>93</td>
+                    <td>175</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <th>Maths</th>
+                    <td>65</td>
+                    <td>74</td>
+                    <td>139</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <th>Physics</th>
+                    <td>90</td>
+                    <td>99</td>
+                    <td>189</td>
+                    <td>S</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="5">Result: Pass</th>
+            </tfoot>
+        </table>
+    </body>
+</html>
