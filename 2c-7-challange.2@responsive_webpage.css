@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 6%;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 64px;
+    padding: 6%;
+    margin: 3%;
+    background-color: peachpuff;
+    border: 6px solid rgb(253, 140, 41);
+}
+
+div{
+    height: 150px;
+    float: left;
+    text-align: center;
+    border: 3px double rgb(253, 174, 105);
+}
+
+.a{
+    background: url("images/isha.1.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+.b{
+    background: url("images/isha.2.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+.c{
+    background: url("images/isha.3.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+.d{
+    background: url("images/isha.4.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+.e{
+    background: url("images/isha.5.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+.f{
+    background: url("images/isha.6.svg") left 50% / 25%  no-repeat, linear-gradient(to right, peachpuff, white);
+}
+
+p{
+    height:fit-content;
+    margin: 10% 5% 10% 25%;
+    font-size: 24px;
+}
+
+@media all and (min-width:2001px) {
+    div{
+        width: 20%;
+    }
+}
+
+@media all and (min-width:1801px) and (max-width:2000px) {
+    div{
+        width: 25%;
+    }
+}
+
+@media all and (min-width:1201px) and (max-width:1800px) {
+    div{
+        width: 33.33%;
+    }
+}
+
+@media all and (min-width:901px) and (max-width:1200px) {
+    h1{
+        font-size: 48px;
+        border-width: 4px;
+    }
+    div{
+        width: 50%;
+    }
+}
+
+@media all and (min-width:100px) and (max-width:900px) {
+    h1{
+        font-size: 32px;
+        border-width: 3px;
+    }
+    div{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 300px){
+    h1{
+        font-size: 16px;
+        border-width: 2px;
+    }
+    div{
+        height: auto;
+    }
+    p{
+        font-size: 12px;
+    }
+}
