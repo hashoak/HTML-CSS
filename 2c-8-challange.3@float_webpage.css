@@ -1,0 +1,90 @@
+body{
+    margin: 3%;
+}
+
+h1{
+    text-align: center;
+    background-color: aqua;
+    padding: 3%;
+    font-size: 64px;
+    border: 9px solid rgb(0, 156, 156);
+    border-radius: 18px;
+}
+
+div{
+    margin: 1%;
+    background-color: aquamarine;
+    border: 6px solid rgb(45, 255, 185);
+    border-radius: 9px;
+    height: auto;
+}
+
+img{
+    width: 20%;
+    float: left;
+    margin: 1.5%;
+}
+
+.even img{
+    float: right;
+}
+
+h2{
+    font-size: 2em;
+    margin: 1%;
+}
+
+p{
+    margin: 1%;
+    font-size: 28px;
+}
+
+.s{
+    clear: left;
+}
+
+.even .s{
+    clear: right;
+}
+
+@media all and (min-width: 1801px){
+    h1{
+        font-size: 96px;
+    }
+    h2{
+        font-size: 64px;
+    }
+    p{
+        font-size: 3em;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1800px){
+    h2{
+        font-size: 64px;
+    }
+    p{
+        font-size: 2.5em;
+    }
+}
+
+@media all and (min-width: 751px) and (max-width: 900px) {
+    p{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 750px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 1em;
+    }
+    img{
+        width: 150px;
+    }
+}
