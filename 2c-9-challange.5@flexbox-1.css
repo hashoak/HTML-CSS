@@ -1,0 +1,44 @@
+body{
+    margin: 3%;
+}
+
+.out-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.row-1 .single{
+    width: 29.33%;
+}
+
+.row-2 .single{
+    width: 21%;
+}
+
+.row-3 .single{
+    width: 16%;
+}
+
+.nest{
+    display: flex;
+}
+
+.single{
+    padding: 1%;
+    background-color: brown;
+    margin: 1%;
+    border-radius: 9px;
+    color: aliceblue;
+}
+
+.nest .single{
+    color: black;
+    background-color: antiquewhite;
+    margin: 1%;
+}
+
+p{
+    margin: 3%;
+    font-size: 24px;
+}
