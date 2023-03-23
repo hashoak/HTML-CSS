@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Grid</title>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+                grid-gap: 20px;
+                grid-auto-rows: minmax(100px,auto);
+                grid-auto-columns: minmax(100px,auto);
+                /* column-gap: 40px;
+                row-gap: 80px; */
+            }
+            .items{
+                background-color: lightcoral;
+                border: 3px green solid;
+                border-radius: 3px;
+            }
+            .a{
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+            .b{
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .e{
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end: 5;
+            }
+            .mini-container{
+                padding: 1%;
+                display: grid;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 20px;
+            }
+            .nest-items{
+                border: 3px greenyellow solid;
+                border-radius: 3px;
+                background-color: lightgoldenrodyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items mini-container">
+                <div class="nest-items">Mini Dabba 1</div>
+                <div class="nest-items">Mini Dabba 2</div>
+                <div class="nest-items">Mini Dabba 3</div>
+            </div>
+            <div class="items a">Dabba 1</div>
+            <div class="items b">Dabba 2</div>
+            <div class="items c">Dabba 3</div>
+            <div class="items d">Dabba 4</div>
+            <div class="items e">Dabba 5</div>
+        </div>
+    </body>
+</html>
